@@ -42,7 +42,14 @@ ui <- dashboardPage(
   body=dashboardBody(
     tabItems(
       tabItem(
-        tabName='home'
+        tabName='home',
+        jumbotron(
+          title='Welcome to NHL Statistics!',
+          status='info',
+          lead='Your home for viewing NHL statistics available via the nhlscraper R-package.',
+          btnName='Learn about nhlscraper',
+          href='https://rentosaijo.github.io/nhlscraper/'
+        )
       ),
       tabItem(
         tabName='player'
