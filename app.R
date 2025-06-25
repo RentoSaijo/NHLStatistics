@@ -5,6 +5,15 @@ library(bs4Dash)
 library(nhlscraper)
 library(cranlogs)
 
+# Get latest stanley cup champions.
+current_season <- get_season_now()$seasonId
+finals <- get_series_carousel(current_season, round=4)
+while (nrow(finals) != 1 || !(finals$winningTeamId %in% 1:100)) {
+  first_year <- current_season %/% 10000
+  current_season <- (first_year-1)*10000 + first_year
+  finals <- get_series_carousel(current_season, round=4)
+}
+
 # Setup user interface.
 ui <- dashboardPage(
   help=NULL,
@@ -40,7 +49,10 @@ ui <- dashboardPage(
   ),
   controlbar=dashboardControlbar(),
   footer=dashboardFooter(
-    left='@RentoSaijo on GitHub, YouTube, X, and Instagram',
+    left=a(
+      href='https://www.linkedin.com/in/rentosaijo',
+      '@RentoSaijo'
+    ),
     right='2025'
   ),
   body=dashboardBody(
@@ -76,14 +88,9 @@ ui <- dashboardPage(
             ),
             status='olive',
             'W: hockey-statistics.com'
-          ),
-          infoBox(
-            width=3,
-            title='NHL API Status',
-            value=if (ping()) 'Online' else 'Offline',
-            icon=ionicon('wifi'),
-            color='secondary'
-          ),
+          )
+        ),
+        fluidRow(
           infoBox(
             width=3,
             title='CRAN Downloads',
@@ -92,7 +99,32 @@ ui <- dashboardPage(
               from='2025-06-11'
             )$count),
             icon=ionicon('download'),
-            color='secondary'
+            color='warning'
+          ),
+          infoBox(
+            width=3,
+            title='NHL API Status',
+            value=if (ping()) 'Online' else 'Offline',
+            icon=ionicon('wifi'),
+            color='warning'
+          ),
+          infoBox(
+            width=3,
+            title='Top Spotlight Player',
+            value=head(get_spotlight_players(), 1)$name.default,
+            icon=ionicon('star'),
+            color='warning'
+          ),
+          infoBox(
+            width=3,
+            title='Stanley Cup Champions',
+            value=paste(
+              if (finals$topSeed.wins==4) finals$topSeed.abbrev else finals$bottomSeed.abbrev,
+              '-',
+              current_season
+            ),
+            icon=ionicon('trophy'),
+            color='warning'
           )
         )
       ),
