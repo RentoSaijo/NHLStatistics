@@ -139,29 +139,40 @@ ui <- dashboardPage(
       tabItem(
         tabName = "skater",
         
-        ## NEW: filters ------------------------------------------------
         fluidRow(
-          box(width = 4, title = "Filters", status = "primary", solidHeader = TRUE, collapsible = TRUE,
-              selectInput( "season", "Season",
-                           choices  = all_seasons$id,
-                           selected = current_season ),
-              selectizeInput(
-                "skater", "Skater",
-                choices  = NULL,          # filled in server
-                selected = "",            # stay empty at start
-                options  = list(
-                  placeholder      = "Start typing a player name…",
-                  allowEmptyOption = TRUE,                 # <- key: keeps blank choice
-                  onInitialize     = I('function(){ this.setValue(""); }')
-                )
+          # -----------------------------------------------
+          box(                         # FILTERS
+            width  = 4,                # 4/12 of the row
+            title  = "Filters",
+            status = "primary",
+            solidHeader = TRUE,
+            collapsible = TRUE,
+            
+            selectInput(
+              "season", "Season",
+              choices  = all_seasons$id,
+              selected = current_season
+            ),
+            selectizeInput(
+              "skater", "Skater",
+              choices  = NULL,
+              selected = "",
+              options  = list(
+                placeholder      = "Start typing a player name…",
+                allowEmptyOption = TRUE,
+                onInitialize     = I('function(){ this.setValue(""); }')
               )
-          )
-        ),
-        
-        ## NEW: interactive chart -------------------------------------
-        fluidRow(
-          box(width = 8, title = "Per-game profile", status = "info", solidHeader = TRUE,
-              echarts4rOutput("season_chart", height = "500px")
+            )
+          ),
+          
+          # -----------------------------------------------
+          box(                         # CHART
+            width  = 8,                # 8/12 of the row
+            title  = "Per-game profile",
+            status = "info",
+            solidHeader = TRUE,
+            
+            echarts4rOutput("season_chart", height = "500px")
           )
         )
       ),
