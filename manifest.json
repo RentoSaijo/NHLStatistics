@@ -636,6 +636,60 @@
         "Built": "R 4.5.0; ; 2025-04-01 06:50:44 UTC; unix"
       }
     },
+    "corrplot": {
+      "Source": "CRAN",
+      "Repository": "https://cran.rstudio.com",
+      "description": {
+        "Package": "corrplot",
+        "Type": "Package",
+        "Title": "Visualization of a Correlation Matrix",
+        "Version": "0.95",
+        "Date": "2024-10-14",
+        "Authors@R": "c(\n  person('Taiyun', 'Wei', email = 'weitaiyun@gmail.com', role = c('cre', 'aut')),\n  person('Viliam', 'Simko', email = 'viliam.simko@gmail.com', role = 'aut'),\n  person('Michael', 'Levy', email = 'michael.levy@healthcatalyst.com', role = 'ctb'),\n  person('Yihui', 'Xie', email = 'xie@yihui.name', role = 'ctb'),\n  person('Yan', 'Jin', email = 'jyfeather@gmail.com', role = 'ctb'),\n  person('Jeff', 'Zemla', email = 'zemla@wisc.edu', role = 'ctb'),\n  person('Moritz', 'Freidank', email = 'freidankm@googlemail.com', role = 'ctb'),\n  person('Jun', 'Cai', email = 'cai-j12@mails.tsinghua.edu.cn', role = 'ctb'),\n  person('Tomas', 'Protivinsky', email = 'tomas.protivinsky@gmail.com', role = 'ctb')\n  )",
+        "Maintainer": "Taiyun Wei <weitaiyun@gmail.com>",
+        "Suggests": "seriation, knitr, RColorBrewer, rmarkdown, magrittr,\nprettydoc, testthat",
+        "Description": "Provides a visual exploratory tool on correlation matrix that supports automatic variable reordering to help detect hidden patterns among variables.",
+        "License": "MIT + file LICENSE",
+        "URL": "https://github.com/taiyun/corrplot",
+        "BugReports": "https://github.com/taiyun/corrplot/issues",
+        "VignetteBuilder": "knitr",
+        "RoxygenNote": "7.2.1",
+        "NeedsCompilation": "no",
+        "Packaged": "2024-10-14 05:38:35 UTC; weita",
+        "Author": "Taiyun Wei [cre, aut],\n  Viliam Simko [aut],\n  Michael Levy [ctb],\n  Yihui Xie [ctb],\n  Yan Jin [ctb],\n  Jeff Zemla [ctb],\n  Moritz Freidank [ctb],\n  Jun Cai [ctb],\n  Tomas Protivinsky [ctb]",
+        "Repository": "CRAN",
+        "Date/Publication": "2024-10-14 12:11:18 UTC",
+        "Built": "R 4.5.0; ; 2025-03-31 22:12:43 UTC; unix"
+      }
+    },
+    "countrycode": {
+      "Source": "CRAN",
+      "Repository": "https://cran.rstudio.com",
+      "description": {
+        "Type": "Package",
+        "Package": "countrycode",
+        "Title": "Convert Country Names and Country Codes",
+        "Version": "1.6.1",
+        "Authors@R": "\n    c(person(given = \"Vincent\",\n             family = \"Arel-Bundock\",\n             role = c(\"aut\", \"cre\"),\n             email = \"vincent.arel-bundock@umontreal.ca\",\n             comment = c(ORCID = \"0000-0003-2042-7063\")),\n      person(given = \"CJ\",\n             family = \"Yetman\",\n             role = \"ctb\",\n             email = \"cj@cjyetman.com\",\n             comment = c(ORCID = \"0000-0001-5099-9500\")),\n      person(given = \"Nils\",\n             family = \"Enevoldsen\",\n             role = \"ctb\",\n             email = \"nils@wlonk.com\",\n             comment = c(ORCID = \"0000-0001-7195-4117\")),\n      person(\"Etienne\", \"Bacher\",\n             email = \"etienne.bacher@protonmail.com\",\n             role = \"ctb\",\n             comment = c(ORCID = \"0000-0002-9271-5075\")),\n      person(given = \"Samuel\",\n             family = \"Meichtry\",\n             role = \"ctb\",\n             email = \"samuel.meichtry@bj.admin.ch\",\n             comment = c(ORCID = \"0000-0003-2165-791X\")))",
+        "Description": "Standardize country names, convert them into one of 40\n    different coding schemes, convert between coding schemes, and assign\n    region descriptors.",
+        "License": "GPL-3",
+        "URL": "https://vincentarelbundock.github.io/countrycode/",
+        "BugReports": "https://github.com/vincentarelbundock/countrycode/issues",
+        "Depends": "R (>= 2.10)",
+        "Suggests": "altdoc, eurostat, testthat, tibble, ISOcodes, utf8",
+        "Encoding": "UTF-8",
+        "LazyData": "yes",
+        "LazyLoad": "yes",
+        "RoxygenNote": "7.3.2",
+        "NeedsCompilation": "no",
+        "Packaged": "2025-03-31 19:29:48 UTC; vincent",
+        "Author": "Vincent Arel-Bundock [aut, cre]\n    (<https://orcid.org/0000-0003-2042-7063>),\n  CJ Yetman [ctb] (<https://orcid.org/0000-0001-5099-9500>),\n  Nils Enevoldsen [ctb] (<https://orcid.org/0000-0001-7195-4117>),\n  Etienne Bacher [ctb] (<https://orcid.org/0000-0002-9271-5075>),\n  Samuel Meichtry [ctb] (<https://orcid.org/0000-0003-2165-791X>)",
+        "Maintainer": "Vincent Arel-Bundock <vincent.arel-bundock@umontreal.ca>",
+        "Repository": "CRAN",
+        "Date/Publication": "2025-03-31 20:00:02 UTC",
+        "Built": "R 4.5.0; ; 2025-03-31 22:49:46 UTC; unix"
+      }
+    },
     "cpp11": {
       "Source": "CRAN",
       "Repository": "https://cran.rstudio.com",
@@ -895,6 +949,33 @@
         "Repository": "CRAN",
         "Date/Publication": "2023-03-22 13:10:05 UTC",
         "Built": "R 4.5.0; ; 2025-04-01 23:38:51 UTC; unix"
+      }
+    },
+    "echarts4r": {
+      "Source": "CRAN",
+      "Repository": "https://cran.rstudio.com",
+      "description": {
+        "Package": "echarts4r",
+        "Title": "Create Interactive Graphs with 'Echarts JavaScript' Version 5",
+        "Date": "2023-06-08",
+        "Version": "0.4.5",
+        "Authors@R": "c(\n  person(\"John\", \"Coene\", email = \"jcoenep@gmail.com\", role = c(\"aut\", \"cph\")),\n  person(\"David\", \"Munoz Tord\", email = \"david.munoztord@mailbox.org\", role = c(\"cre\", \"ctb\"), comment = c(ORCID = \"0000-0001-7954-8295\")),\n  person(given = \"Wei\", family = \"Su\", email = \"swsoyee@gmail.com\", role = \"ctb\"),\n  person(family = \"Helgasoft\", email = \"contact@helgasoft.com\", role = \"ctb\"),\n  person(\"Xianying\", \"Tan\", email = \"shrektan@126.com\", role = \"ctb\", comment = c(ORCID = \"0000-0002-6072-3521\")),\n  person(\"Robin\", \"Cura\", email = \"robin.cura@gmail.com\", role = \"ctb\", comment = c(ORCID = \"0000-0001-5926-1828\")),\n  person(\"Mathida\", \"Chuk\", email = \"mathidachuk@gmail.com\", role = \"ctb\"),\n  person(\"Robert\", \"Koetsier\", email = \"rk8roko@gmail.com \", role = \"ctb\", comment = c(ORCID = \"0000-0002-4477-5401\")),\n  person(\"Jelle\", \"Geertsma\", email = \"rdatasculptor@gmail.com\", role = \"ctb\")\n  )",
+        "Description": "Easily create interactive charts by leveraging the 'Echarts Javascript' library which includes\n    36 chart types, themes, 'Shiny' proxies and animations.",
+        "License": "Apache License (>= 2.0)",
+        "Encoding": "UTF-8",
+        "Imports": "htmlwidgets, dplyr (>= 0.7.0), purrr, countrycode, broom,\nshiny, scales, corrplot, htmltools, jsonlite, rstudioapi",
+        "Suggests": "tidyr, testthat, knitr, rmarkdown, covr, data.tree, leaflet,\ntibble",
+        "Depends": "R (>= 4.1.0)",
+        "RoxygenNote": "7.2.3",
+        "URL": "https://echarts4r.john-coene.com/,\nhttps://github.com/JohnCoene/echarts4r",
+        "BugReports": "https://github.com/JohnCoene/echarts4r/issues/",
+        "NeedsCompilation": "no",
+        "Packaged": "2023-06-16 14:02:03 UTC; david",
+        "Author": "John Coene [aut, cph],\n  David Munoz Tord [cre, ctb] (<https://orcid.org/0000-0001-7954-8295>),\n  Wei Su [ctb],\n  Helgasoft [ctb],\n  Xianying Tan [ctb] (<https://orcid.org/0000-0002-6072-3521>),\n  Robin Cura [ctb] (<https://orcid.org/0000-0001-5926-1828>),\n  Mathida Chuk [ctb],\n  Robert Koetsier [ctb] (<https://orcid.org/0000-0002-4477-5401>),\n  Jelle Geertsma [ctb]",
+        "Maintainer": "David Munoz Tord <david.munoztord@mailbox.org>",
+        "Repository": "CRAN",
+        "Date/Publication": "2023-06-16 23:30:02 UTC",
+        "Built": "R 4.5.0; ; 2025-04-02 08:54:42 UTC; unix"
       }
     },
     "evaluate": {
@@ -1427,6 +1508,34 @@
         "Date/Publication": "2024-04-04 05:03:00 UTC",
         "Built": "R 4.5.0; aarch64-apple-darwin20; 2025-04-01 06:32:11 UTC; unix",
         "Archs": "htmltools.so.dSYM"
+      }
+    },
+    "htmlwidgets": {
+      "Source": "CRAN",
+      "Repository": "https://cran.rstudio.com",
+      "description": {
+        "Type": "Package",
+        "Package": "htmlwidgets",
+        "Title": "HTML Widgets for R",
+        "Version": "1.6.4",
+        "Authors@R": "c(\n    person(\"Ramnath\", \"Vaidyanathan\", role = c(\"aut\", \"cph\")),\n    person(\"Yihui\", \"Xie\", role = \"aut\"),\n    person(\"JJ\", \"Allaire\", role = \"aut\"),\n    person(\"Joe\", \"Cheng\", , \"joe@posit.co\", role = \"aut\"),\n    person(\"Carson\", \"Sievert\", , \"carson@posit.co\", role = c(\"aut\", \"cre\"),\n           comment = c(ORCID = \"0000-0002-4958-2844\")),\n    person(\"Kenton\", \"Russell\", role = c(\"aut\", \"cph\")),\n    person(\"Ellis\", \"Hughes\", role = \"ctb\"),\n    person(\"Posit Software, PBC\", role = c(\"cph\", \"fnd\"))\n  )",
+        "Description": "A framework for creating HTML widgets that render in various\n    contexts including the R console, 'R Markdown' documents, and 'Shiny'\n    web applications.",
+        "License": "MIT + file LICENSE",
+        "URL": "https://github.com/ramnathv/htmlwidgets",
+        "BugReports": "https://github.com/ramnathv/htmlwidgets/issues",
+        "Imports": "grDevices, htmltools (>= 0.5.7), jsonlite (>= 0.9.16), knitr\n(>= 1.8), rmarkdown, yaml",
+        "Suggests": "testthat",
+        "Enhances": "shiny (>= 1.1)",
+        "VignetteBuilder": "knitr",
+        "Encoding": "UTF-8",
+        "RoxygenNote": "7.2.3",
+        "NeedsCompilation": "no",
+        "Packaged": "2023-12-06 00:11:16 UTC; cpsievert",
+        "Author": "Ramnath Vaidyanathan [aut, cph],\n  Yihui Xie [aut],\n  JJ Allaire [aut],\n  Joe Cheng [aut],\n  Carson Sievert [aut, cre] (<https://orcid.org/0000-0002-4958-2844>),\n  Kenton Russell [aut, cph],\n  Ellis Hughes [ctb],\n  Posit Software, PBC [cph, fnd]",
+        "Maintainer": "Carson Sievert <carson@posit.co>",
+        "Repository": "CRAN",
+        "Date/Publication": "2023-12-06 06:00:06 UTC",
+        "Built": "R 4.5.0; ; 2025-04-01 23:26:28 UTC; unix"
       }
     },
     "httpuv": {
@@ -3369,14 +3478,20 @@
     }
   },
   "files": {
+    ".RData": {
+      "checksum": "39a4181c772bb77f3da2e3deee6a5bd3"
+    },
     "app.R": {
-      "checksum": "3b4ecabaecdb9083500dbd22b3990de3"
+      "checksum": "74397163887d8aae898795fa85b2be9d"
     },
     "NHLStatistics.png": {
       "checksum": "be06bc0ca3ac4955f9dc86689b9386ac"
     },
     "README.md": {
       "checksum": "20c7f2ba5d9467a359a8dce06b9d27c3"
+    },
+    "Test.R": {
+      "checksum": "64a357934904279c2ceaa436bbfcac78"
     }
   },
   "users": null
