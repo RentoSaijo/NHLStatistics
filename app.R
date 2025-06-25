@@ -142,7 +142,7 @@ ui <- dashboardPage(
         fluidRow(
           # -----------------------------------------------
           box(                         # FILTERS
-            width  = 4,                # 4/12 of the row
+            width  = 2,                # 4/12 of the row
             title  = "Filters",
             status = "primary",
             solidHeader = TRUE,
@@ -167,7 +167,7 @@ ui <- dashboardPage(
           
           # -----------------------------------------------
           box(                         # CHART
-            width  = 8,                # 8/12 of the row
+            width  = 10,                # 8/12 of the row
             title  = "Per-game profile",
             status = "info",
             solidHeader = TRUE,
