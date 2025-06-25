@@ -247,7 +247,7 @@ server <- function(input, output, session) {
           input$season_id %/% 10000, "-", input$season_id %% 10000,
           " Season"
         ),
-        left = "center", top = 20
+        left = "center", top = 'bottom'
       )
 
     # playoff marker if any playoff games
