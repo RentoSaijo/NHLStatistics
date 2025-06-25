@@ -141,7 +141,7 @@ ui <- dashboardPage(
         
         ## NEW: filters ------------------------------------------------
         fluidRow(
-          box(width = 3, title = "Filters", status = "primary", solidHeader = TRUE, collapsible = TRUE,
+          box(width = 4, title = "Filters", status = "primary", solidHeader = TRUE, collapsible = TRUE,
               selectInput( "season", "Season",
                            choices  = all_seasons$id,
                            selected = current_season ),
@@ -160,7 +160,7 @@ ui <- dashboardPage(
         
         ## NEW: interactive chart -------------------------------------
         fluidRow(
-          box(width = 9, title = "Per-game profile", status = "info", solidHeader = TRUE,
+          box(width = 8, title = "Per-game profile", status = "info", solidHeader = TRUE,
               echarts4rOutput("season_chart", height = "500px")
           )
         )
