@@ -47,7 +47,6 @@ ui <- dashboardPage(
       )
     )
   ),
-  controlbar=dashboardControlbar(),
   footer=dashboardFooter(
     left=a(
       href='https://www.linkedin.com/in/rentosaijo',
