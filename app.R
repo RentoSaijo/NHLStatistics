@@ -255,7 +255,7 @@ server <- function(input, output, session) {
       e_title(
         paste0(
           input$skater, "'s TOI, SOG, and +/- for ",
-          input$season_id %/% 10000, "-", input$season_id %% 10000,
+          season_id %/% 10000, "-", season_id %% 10000,
           " Season"
         ),
         left = "center", top = 'bottom'
